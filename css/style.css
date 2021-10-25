@@ -1,0 +1,297 @@
+:root {
+      --gray: rgb(31, 31, 31);
+      --red: rgb(185, 41, 41);
+      --orange: #FC6B00;
+      --light-orange: #ff8d3b;
+      --dark-orange: #d65900;
+
+
+      /* FONT */
+      --primary-font: 'Quicksand', sans-serif;
+      --secondary-font: 'Kaushan Script', cursive;
+}
+
+* {
+      scroll-behavior: smooth;
+}
+
+body {
+      font-family: var(--primary-font);
+      font-weight: 400;
+}
+
+.header {
+      width: 100%;
+
+      background: var(--dark-orange);
+      color: #fff;
+}
+
+
+/* NAVBAR */
+.navbar {
+      padding: 1rem;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+}
+
+.navbar__logo {
+      font-size: 20px;
+}
+
+.navbar__list {
+      display: flex;
+      justify-items: space-around;
+      align-items: center;
+}
+
+.navbar__list-item {
+      margin: 0 10px;
+
+      list-style: none;
+}
+
+.navbar__link {
+      padding: 10px;
+
+      color: #fff;
+      transition: background 0.3s ease;
+      text-decoration: none;
+}
+
+.navbar__link:hover {
+      background: #fff;
+      color: #000;
+}
+
+/* BANNER */
+.banner {
+      height: 100vh;
+      position: relative;
+
+      background-image: url(../images/banner-background-3.jpg);
+      background-size: cover;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.banner::before {
+      content: "";
+      height: 100vh;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.842);
+      z-index: 2;
+}
+
+.banner__info {
+      position: absolute;
+      padding: 1.5rem;
+      margin: auto;
+      z-index: 1232;
+
+      background: rgba(94, 94, 94, 0.199);
+}
+
+.banner__title {
+      font-weight: 400;
+}
+
+.banner__text {
+
+}
+
+.button {
+      padding: 0.7rem;
+
+      /* background: rgb(252, 252, 252); */
+      background: var(--dark-orange);
+      color: #fff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      font-weight: 500;
+}
+
+/* SECTION */
+.section {
+      padding: 1rem;
+
+      background: rgb(236, 236, 236);
+}
+
+.section__title {
+      text-align: center;
+
+      font-family: var(--secondary-font);
+      font-size: 45px;
+}
+
+/*------------------------------------ MENU ------------------------------------*/
+.flex-menu {
+      width: 100%;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+}
+
+.menu__card {
+      width: 30%;
+      padding: 1rem;
+      margin: 10px 0;
+
+      background: rgb(230, 229, 229);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+}
+
+.card__line {
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(to left, red, orange);
+      border: none;
+}
+
+.card__description {
+      width: 300px;
+}
+
+.card__img {
+      height: 50%;
+      width: 100%;
+}
+
+.hidden {
+      display: none;
+}
+
+
+/* CONTACT */
+.contact {
+      background: var(--gray);
+      color: #fff;
+}
+
+.content {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+}
+
+.left {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.map {
+      width: 50%;
+}
+
+
+
+
+.form {
+      width: 100%;
+      padding: 1rem;
+
+      
+      color: rgb(255, 255, 255);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+}
+
+.form-control {
+      width: 50%;
+      padding: 10px;
+      margin: 5px 0;
+
+      outline: none;
+}
+
+.left__title {
+      font-size: 20px;
+      font-weight: bold;
+}
+
+.social-links {
+      width: 50%;
+      min-height: 120px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+
+      background: var(--dark-orange);      
+      text-align: center;
+}
+
+.social-links__link {
+      font-size: 30px;
+      color: #fff;
+      text-decoration: none;
+}
+
+@media screen and (max-width: 1050px) {
+      body {
+            background: red;
+      }
+
+      .menu__card {
+            width: 70%;
+            margin: auto;
+
+            text-align: center;
+
+            align-items: center;
+      }
+
+      .navbar__list {
+            display: none;
+      }
+
+      .burger-button {
+            display: block;
+      }
+
+      .content {
+            
+            flex-direction: column;
+      }
+
+      .map,
+      .social-links {
+            width: 90%;
+      }
+
+      .form-control {
+            width: 70%;
+      }
+}
+
+@media screen and (max-width: 500px) {
+      body {
+            background: red;
+      }
+
+      .menu__card {
+            width: 90%;
+      }
+}
