@@ -81,6 +81,26 @@
                                           elit. Officiis incidunt
                                           perferendis sequi reiciendis? Ipsum minus, nesciunt inventore esse ipsa facere
                                           alias quia, sed optio earum, ratione quam mollitia molestias hic?</p>
+                                    <ul class="about-container__social-links">
+                                          <li class="about-container__social-item">
+                                                <a href="https://google.com" class="about-container__social-link"
+                                                      target="_blank">
+                                                      <i class="fab fa-facebook"></i>
+                                                </a>
+                                          </li>
+
+                                          <li class="about-container__social-item">
+                                                <a href="https://google.com" class="about-container__social-link"
+                                                      target="_blank">
+                                                      <i class="fab fa-instagram"></i></a>
+                                          </li>
+
+                                          <li class="about-container__social-item">
+                                                <a href="https://google.com" class="about-container__social-link"
+                                                      target="_blank">
+                                                      <i class="fab fa-twitter"></i></a>
+                                          </li>
+                                    </ul>
                                     <button class="button">Ver más</button>
                               </div>
                               <img class="about-container__img" src="./images/about/about-img.avif" alt="">
@@ -154,11 +174,21 @@
                   <div class="container">
                         <div class="content">
                               <form class="form">
-                                    <h3>Formulario</h3>
-                                    <input class="form-control" type="text" placeholder="Digite su nombre">
-                                    <input class="form-control" type="text" placeholder="Digite su correo electrónico">
-                                    <textarea class="form-control" cols="30" rows="10"
-                                          placeholder="Digite su mensaje"></textarea>
+                                    <div class="form-group">
+                                          <label for="name">Nombre</label>
+                                          <input class="form-control" name="name" type="text"
+                                                placeholder="Digite su nombre">
+                                    </div>
+                                    <div class="form-group">
+                                          <label for="email">Email</label>
+                                          <input class="form-control" name="email" type="email"
+                                                placeholder="Digite su correo electrónico">
+                                    </div>
+                                    <div class="form-group">
+                                          <label for="message">Mensaje</label>
+                                          <textarea class="form-control" name="nmessage" cols="30" rows="10"
+                                                placeholder="Digite su mensaje"></textarea>
+                                    </div>
                                     <input class="form-control button" type="submit" value="Enviar">
                               </form>
 
