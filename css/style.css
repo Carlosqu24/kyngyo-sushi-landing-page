@@ -43,7 +43,7 @@ p {
 
 /* SECTION */
 .section {
-      padding: 1rem 0;
+      padding: 2rem 0;
 
       background: rgb(236, 236, 236);
       background: var(--gray);
@@ -477,7 +477,7 @@ p {
       }
 
       .section__title {
-            font-size: 45px;
+            font-size: 40px;
       }
 
       .flex-menu {
