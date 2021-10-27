@@ -496,6 +496,9 @@ p {
       }
 
       .flex-menu {
+            padding-left: 1rem;
+            padding-right: 1rem;
+
             grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
       }
 
