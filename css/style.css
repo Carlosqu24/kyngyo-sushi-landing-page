@@ -132,7 +132,7 @@ p {
       height: 100vh;
       position: relative;
 
-      background-image: url(../images/banner/banner-bg-7.avif);
+      background-image: url(../images/banner/banner-bg-3.avif);
       background-size: cover;
 
       display: flex;
@@ -223,7 +223,7 @@ p {
 
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
 }
 
 .about-container__left {
@@ -281,7 +281,7 @@ p {
 
 .about-container__img {
       width: 50%;
-      height: 80%;
+      height: 500px;
 
       border-radius: 8px;
       box-shadow: rgba(0, 0, 0, 0.596) 0px 4px 12px;
@@ -292,6 +292,7 @@ p {
 /*------------------------------------ MENU ------------------------------------*/
 .flex-menu {
       width: 100%;
+      /* padding: 1rem 0; */
 
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -484,7 +485,7 @@ p {
       }
 
       .flex-menu {
-            padding: 0 1rem;
+            padding: 1rem;
 
             grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
       }
