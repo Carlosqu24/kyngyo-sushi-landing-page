@@ -182,6 +182,7 @@ p {
 
 .banner__text {
       width: 80%;
+      margin: 35px 0 17px 0;
 
       font-size: 20px;
       font-weight: 300;
@@ -191,9 +192,9 @@ p {
 .button {
       padding: 8px 10px;
 
-      /* background: rgb(252, 252, 252); */
       background: var(--dark-orange);
       color: #fff;
+
       border: none;
       border-radius: 8px;
       outline: none;
@@ -310,6 +311,7 @@ p {
 .menu__card {
       width: 100%;
       padding: 1rem;
+      border-radius: 8px;
 
       background: rgb(41, 41, 41);
       color: #fff;
@@ -343,6 +345,7 @@ p {
 .card__img {
       height: 200px;
       width: 100%;
+      border-radius: 8px;
 
       object-fit: cover;
 }
