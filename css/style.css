@@ -478,12 +478,18 @@ p {
       
       .about-container__left {
             width: 100%;
+            margin-bottom: 50px;
       }
 
       .about-container__img {
             width: 100%;
 
-            padding: 0 1rem;
+            padding: 0;
+      }
+
+      /*----------------- CONTACT ---------------------*/
+      .form {
+            margin-bottom: 50px;
       }
 }
 
